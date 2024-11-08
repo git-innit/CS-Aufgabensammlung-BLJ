@@ -8,8 +8,4 @@
     <Nullable>disable</Nullable>
   </PropertyGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\Augabe-2\Aufgabe-2.csproj" />
-  </ItemGroup>
-
 </Project>
