@@ -8,7 +8,7 @@
             {
                 try
                 {
-                    int output = 0;
+                    double output = 0;
 
                     Console.WriteLine("Make your calculation (or press Q to quit):");
                     string eingabe = Console.ReadLine();
@@ -48,11 +48,11 @@
                 }
             }
         }
-        private static int Rechner(string eingabe,char aktion)
+        private static double Rechner(string eingabe,char aktion)
         {
             string[] eingabe_zahlen_str = eingabe.Split(aktion);
-            int[] zahlen = new int[eingabe_zahlen_str.Length];
-            int rueckgabewert = 0;
+            double[] zahlen = new double[eingabe_zahlen_str.Length];
+            double rueckgabewert = 0;
             for (int i = 0; i < eingabe_zahlen_str.Length; i++)
             {
                 zahlen[i] = Convert.ToInt32(eingabe_zahlen_str[i]);
